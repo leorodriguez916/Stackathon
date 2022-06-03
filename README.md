@@ -6,8 +6,14 @@ Armor Up! is a fast-paced 2D game that allows players ages 12+ to hone the speed
 
 The game offers the player only one choice each round: an item which will reduce incoming damage by a flat amount, or an item which will reduce damage by a percentage value. Simple! As the game speeds up, the player must be quick on their feet to select the right option judging on what kind of enemies are approaching.
 
-Image(s) Insert Here - here is where you can place images of your project, a demo gif, and link to a deployed site - visuals matter!
-
+<p align="center">
+  <a href="">
+    <img src="./public/images/passage.png" alt="Logo" >
+  </a>
+  <p align="center">
+   Passage is retro-inspired mystery role-playing game developed using Phaser 3.
+    <br />
+    
 ## Customize
 
 Now that you've got the code, follow these steps to get acclimated:
