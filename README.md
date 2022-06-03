@@ -75,6 +75,6 @@ npm run start
 If you want to contact me you can reach me at: 
     leorodriguez916@gmail.com
 
-Connect with me on LinkedIN at 
+Connect with me on LinkedIN at: 
     https://www.linkedin.com/in/leorubenrodriguez/
 
