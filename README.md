@@ -1,21 +1,12 @@
-# FS-App-Template
+# Armor Up!
 
-## Setup
+## About
 
-To use this as boilerplate, you'll need to take the following steps:
+Armor Up! is a fast-paced 2D game that allows players ages 12+ to hone the speed of their reactions through quick, interactive math problems.
 
-- Don't fork or clone this repo! Instead, create a new, empty
-  directory on your machine and `git init` (or create an empty repo on
-  Github and clone it to your local machine)
+The game offers the player only one choice each round: an item which will reduce incoming damage by a flat amount, or an item which will reduce damage by a percentage value. Simple! As the game speeds up, the player must be quick on their feet to select the right option judging on what kind of enemies are approaching.
 
-- Now you will have to add the fs-app-template as a remote and merge it into your own repository.
-
-```
-git remote add boilermaker git@github.com:FullstackAcademy/fs-app-template.git
-git fetch boilermaker
-git merge boilermaker/main
-git branch -m master main
-```
+Image(s) Insert Here - here is where you can place images of your project, a demo gif, and link to a deployed site - visuals matter!
 
 ## Customize
 
