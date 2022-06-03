@@ -6,66 +6,75 @@ Armor Up! is a fast-paced 2D game that allows players ages 12+ to hone the speed
 
 The game offers the player only one choice each round: an item which will reduce incoming damage by a flat amount, or an item which will reduce damage by a percentage value. Simple! As the game speeds up, the player must be quick on their feet to select the right option judging on what kind of enemies are approaching.
 
+<br />
+
 <p align="center">
   <a href="">
-    <img src="./public/images/passage.png" alt="Logo" >
+    <img style="max-width:300px" src="./public/Gameplay.png" alt="Logo" >
   </a>
   <p align="center">
-   Passage is retro-inspired mystery role-playing game developed using Phaser 3.
     <br />
     
-## Customize
+## Prerequisites:
 
-Now that you've got the code, follow these steps to get acclimated:
+Armor Up! uses this Phaser3 + Parcel [template](https://github.com/ourcade/phaser3-parcel-template) created by Ourcade
 
-- Update project name and description in `package.json`
-- `npm install`
-- Create two postgres databases (`MY_APP_NAME` should match the `name`
-  parameter in `package.json`):
-- These commands will create both your **development** and **test** databases
+You'll need [Node.js](https://nodejs.org/en/), [npm](https://www.npmjs.com/), and [Parcel](https://parceljs.org/) installed.
+
+It is highly recommended to use [Node Version Manager](https://github.com/nvm-sh/nvm) (nvm) to install Node.js and npm.
+
+For Windows users there is [Node Version Manager for Windows](https://github.com/coreybutler/nvm-windows).
+
+Install Node.js and `npm` with `nvm`:
+
+```bash
+nvm install node
+
+nvm use node
+```
+
+Replace 'node' with 'latest' for `nvm-windows`.
+
+Then install Parcel:
+
+```bash
+npm install -g parcel-bundler
+```
+    
+## Installing Armor Up!:
+
+To install the game, follow these steps:
+Fork and clone this repository to your local machine:
+
+```bash
+git@github.com:leorodriguez916/Stackathon.git
+```
+
+This will create a folder named `Stackathon`. You can specify a different folder name like this:
+
+```bash
+git clone git@github.com:2202-capstone-fsa/Passage.git
+my-folder-name
+```
+
+Go into your new project folder and install dependencies:
+
+```bash
+cd Passage # or 'my-folder-name'
+npm install
+```
+
+Start server:
 
 ```
-createdb <YOUR APP NAME HERE FROM package.json>
-createdb <YOUR APP NAME HERE FROM package.json>-test
+npm run start
 ```
 
-- By default, running `npm test` will use your test database, while
-  regular development uses development database
+## Contact:
+    
+If you want to contact me you can reach me at: 
+    leorodriguez916@gmail.com
 
-## Start
+Connect with me on LinkedIN at 
+    https://www.linkedin.com/in/leorubenrodriguez/
 
-Sync and seed your database by running `npm run seed`. Running `npm run start:dev` will make great things happen!
-
-- start:dev will both start your server and build your client side files using webpack
-- start:dev:logger is the same as start:dev, but you will see your SQL queries (can be helpful for debugging)
-- start:dev:seed will start your server and also seed your database (this is useful when you are making schema changes and you don't want to run your seed script separately)
-
-### Heroku
-
-1.  Set up the [Heroku command line tools][heroku-cli]
-2.  `heroku login`
-3.  Add a git remote for heroku:
-
-[heroku-cli]: https://devcenter.heroku.com/articles/heroku-cli
-
-- **If you are creating a new app...**
-
-  1.  `heroku create` or `heroku create your-app-name` if you have a
-      name in mind.
-  2.  `heroku config:set JWT=<your secret here!>` to set a secret for JWT signing
-
-Database Setup
-
-3.  `heroku addons:create heroku-postgresql:hobby-dev` to add
-    ("provision") a postgres database to your heroku dyno (This creates your production database)
-
-4.  `heroku config:set SEED=true` to get heroku to sync and seed your database
-
-5.  note everytime your app restarts, the database tables will be dropped and re-created. To avoid this you can `config:unset SEED`
-
-- **If you already have a Heroku app...**
-
-  1.  `heroku git:remote your-app-name` You'll need to be a
-      collaborator on the app.
-
-Now, you should be deployed!
